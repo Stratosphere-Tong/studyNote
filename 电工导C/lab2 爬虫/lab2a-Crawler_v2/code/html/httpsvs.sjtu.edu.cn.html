@@ -1,0 +1,1059 @@
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>视觉交大</title>
+    <!-- min CSS -->
+    <!--吴 新增--><link rel='stylesheet' href='/jtdx/resources/assets/css/master.min.css' /><!-- 吴 新增结束 -->
+    <link rel="stylesheet" href="/jtdx/resources/assets/css/etui/etui3.min.css">
+    <link rel="stylesheet" href="/jtdx/resources/assets/plugin/owl/owl.carousel.css">
+    <!-- Widget CSS -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/jtdx/resources/assets/css/style.css">
+    <link rel="stylesheet" href="/jtdx/resources/assets/css/responsive.css">
+    <link rel="stylesheet" href="/jtdx/resources/assets/css/etui/etui3.utility.css">
+    <!-- icons -->
+    <link rel="shortcut icon" href="/jtdx/resources/assets/img/ico/favicon.png">
+    <!--Main JS-->
+    <script src="/jtdx/resources/assets/js/etui/jquery-2.0.3.min.js"></script>
+    <!--[if lt ie 9]>
+    <script src="/jtdx/resources/assets/js/etui/html5shiv.min.js"></script>
+    <script src="/jtdx/resources/assets/js/etui/respond.min.js"></script>
+    <![endif]-->
+    <script src="/jtdx/resources/assets/plugin/owl/owl.carousel.min.js"></script>
+    <script src="/jtdx/resources/assets/js/etui/ETUI3.min.js"></script>
+    <script src="/jtdx/resources/js/common.js"></script>
+    <script src="/jtdx/resources/js/jquery.mousewheel.min.js"></script>
+    <!--Widget JS-->
+</head>
+<style type="text/css">
+    
+        
+        
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    /*.topbanner .logo {*/
+        /*position: absolute;*/
+        /*left: 20px;*/
+        /*top: 20px;*/
+    /*}*/
+    /*.top-cont .down {*/
+        /*background: rgba(0,0,0,.6);*/
+        /*color: #fff;*/
+        /*text-align: center;*/
+        /*position: fixed;*/
+        /*bottom: 0;*/
+        /*padding: 6px 0;*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*width: 100%;*/
+        /*z-index: 99999;*/
+    /*}*/
+    /*.top-cont .down img {*/
+        /*width: auto;*/
+        /*height: auto;*/
+        /*margin-left: 8px;*/
+    /*}*/
+    .dark-bg {
+        background: #1D1B1B;
+        padding: 40px 0;
+    }
+    .footer {
+        background: #282828;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .hot-theme{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    .icon-red{
+        color: #C8171E;
+    }
+
+</style>
+<body class="splash-parallax"><!-- 吴修改 body内新增class -->
+	<div class="main-cont">
+        <!-- 头部  吴 修改 整段替换 开始-->
+        <div class="header-index navbar-wrapper">
+            <!-- logo及网站导航 -->
+            <div class="row">
+                <div class="col-md-4 col-xs-6">
+                    <a href="/" title="">
+                        <img src="/jtdx/resources/assets/img/logo-top.png">
+                    </a>
+                </div>
+                <div class="col-md-8 col-xs-6 text-right" style="display: flex;justify-content: flex-end;">
+                    
+                    
+                        <button class="btn" id="denglu" data-toggle="modal" data-target="#myModal">登录</button>
+                    
+                    <!-- <button class="btn" id="denglu" data-toggle="modal" data-target="#myModal">登录</button>-->
+                </div>
+            </div>
+        </div>
+<!--吴 新增 开始-->
+<header role="banner">
+    <section class="panel-collection" data-modular-content-collection>
+        <section class="panel no-margin-bottom" data-type="splash-image" data-scroll-type="parallax">
+            <p id="splash--scroller"><a href="#main-content">探索视觉交大 <img src="/jtdx/resources/assets/img/down.png"></a></p>
+            <picture aria-hidden="true" tabindex="-1">
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+                <source srcset="/jtdx/resources/assets/img/lgbanner.png" media="(orientation: landscape)" />
+                <!--[if IE 9]></video><![endif]-->
+                <img class="bg-img" role="presentation" alt="" src="/jtdx/resources/assets/img/lgbanner.png">
+            </picture>
+        </section><!-- panel Splash Screen -->
+    </section><!-- panel-collection -->
+</header><!--吴 新增 结束-->
+
+<!-- 吴 新增 开始 -->
+<div id="main" role="main"><!-- 吴 新增 结束 -->
+    
+        <div class="search-cont">
+            <div class="logo-lg">
+                <img src="/jtdx/resources/assets/img/logo-lg.png">
+            </div>
+            <div class="input-group">
+                
+                <i class="iconfont icon-sousuo" style="left:10px;" ></i>
+                <input type="text" class="form-control" style="padding-left: 60px;" id="searchContent"  placeholder="热门搜索：人物、图书、历史">
+                <button class="btn btn-danger" type="button" onclick="searchByContent()">搜索</button>
+            </div>
+            <div class="normal-slider owl-carousel Slider-one">
+                
+                    <div class="item">
+                        <img src="/jtdx//resources/images\12756\0_b8024efc-32b6-410a-a2f0-95d01a249073.jpg" alt="Slider-1">
+                    </div>
+                
+                    <div class="item">
+                        <img src="/jtdx//resources/images\12757\0_67d6bc64-00eb-468e-a89d-5c404dae65f4.jpg" alt="Slider-1">
+                    </div>
+                
+                    <div class="item">
+                        <img src="/jtdx//resources/images\12758\0_1f560bee-74e7-47e9-b702-c6052af26cb5.jpg" alt="Slider-1">
+                    </div>
+                
+            </div>
+        </div>
+        <!-- 头部结束 吴 修改 结束-->
+
+        <!-- 内容 -->
+        <div class="main">
+            
+            <div class="container" >
+                <h2 class="title-h2">热门推荐</h2>
+                <div class="hot-img">
+                    <div class="row">
+                        
+                            
+                                <div id="hot_0" class="col-md-8 col-sm-8 col-xs-12 hot-theme" >
+                                    <a  href="/jtdx/index/imagesList?themeId=39" 
+                                            >
+                                        <div class="hover-show-cont" >
+                                            <div class="hover-show-zt">
+                                                <div class="img-title">南洋筑韵</div>
+                                                
+                                                
+                                                <span>图片数量：
+                                                
+                                                397</span>
+                                                
+                                            </div>
+                                            <p class="img-info"></p>
+                                        </div>
+                                        
+                                            
+                                                <img src="/jtdx/resources/images\11844/0_3d0bd045-25be-48cd-ad68-9dcba06acdd8.jpg">
+                                            
+                                            
+                                        
+                                        <p class="text">南洋筑韵</p>
+                                    </a>
+                                </div>
+                            
+                            
+                        
+                            
+                            
+                                <div class="col-md-4 col-sm-4 col-xs-12 hot-theme" >
+                                    <a  href="/jtdx/index/imagesList?themeId=52" 
+                                            >
+                                        <div class="hover-show-cont" >
+                                            <div class="hover-show-zt">
+                                                <div class="img-title">交大抗“疫”</div>
+                                                
+                                                
+                                                <span>图片数量：
+                                                
+                                                380</span>
+                                                
+                                            </div>
+                                            <p class="img-info"></p>
+                                        </div>
+                                        
+                                            
+                                                <img src="/jtdx/resources/images\12131/0_a16c4640-e1d0-440f-af77-8b1cfea70c19.jpg">
+                                            
+                                            
+                                        
+                                        <p class="text">交大抗“疫”</p>
+                                    </a>
+                                </div>
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                            
+                            
+                        
+                    </div>
+
+                    <div class="row margin-top-30">
+                        
+                            
+                        
+                            
+                        
+                            
+                                <div class="col-md-4 col-sm-4 col-xs-12 hot-theme" >
+                                    <a  href="/jtdx/index/imagesList?themeId=55" 
+                                            >
+                                        <div class="hover-show-cont" >
+                                            <div class="hover-show-zt">
+                                                <div class="img-title">交大星空</div>
+                                                
+                                                
+                                                <span>图片数量：
+                                                
+                                                52</span>
+                                                
+                                            </div>
+                                            <p class="img-info"></p>
+                                        </div>
+                                        
+                                            
+                                                <img src="/jtdx/resources/images\12659/0_2f7ddb9e-e787-457a-bb46-47424dc63b34.jpeg">
+                                            
+                                            
+                                        
+                                        <p class="text">交大星空</p>
+                                    </a>
+                                </div>
+                            
+                        
+                            
+                                <div class="col-md-4 col-sm-4 col-xs-12 hot-theme" >
+                                    <a  href="/jtdx/index/imagesList?themeId=50" 
+                                            >
+                                        <div class="hover-show-cont" >
+                                            <div class="hover-show-zt">
+                                                <div class="img-title">交大的春，来了！</div>
+                                                
+                                                
+                                                <span>图片数量：
+                                                
+                                                112</span>
+                                                
+                                            </div>
+                                            <p class="img-info"></p>
+                                        </div>
+                                        
+                                            
+                                                <img src="/jtdx/resources/images\12740/0_23b62d5a-5104-4a24-a2e0-d20f0ef8f7b7.jpg">
+                                            
+                                            
+                                        
+                                        <p class="text">交大的春，来了！</p>
+                                    </a>
+                                </div>
+                            
+                        
+                            
+                                <div class="col-md-4 col-sm-4 col-xs-12 hot-theme" >
+                                    <a 
+                                             onclick="gotoVideoList();" href="javascript:void(0);" >
+                                        <div class="hover-show-cont" >
+                                            <div class="hover-show-zt">
+                                                <div class="img-title">视频中心</div>
+                                                
+                                                <span>视频数量：
+                                                
+                                                1</span>
+                                                
+                                                
+                                            </div>
+                                            <p class="img-info"></p>
+                                        </div>
+                                        
+                                            
+                                                <img src="/jtdx/resources/images/videos\15/1_410deb03-c71c-44f7-af36-37da21b91ecb.jpg">
+                                            
+                                            
+                                        
+                                        <p class="text">视频中心</p>
+                                    </a>
+                                </div>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="gray-bg">
+                <div class="container">
+                    <h2 class="title-h2">精选主题</h2>
+                    <ul class="btn-list row">
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=38" 
+                                    >航拍交大·徐汇</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=37" 
+                                    >航拍交大•闵行</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=39" 
+                                    >南洋筑韵</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=42" 
+                                    >SJTU  SCENE </a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=40" 
+                                    >交大名片</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=52" 
+                                    >交大抗“疫”</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=54" 
+                                    >运动交大</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=45" 
+                                    >视界交大</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=49" 
+                                    >交大映画</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=41" 
+                                    >交大动图</a></li>
+                        
+                            <li class="col-md-2 col-xs-3"><a  href="/jtdx/index/imagesList?themeId=51" 
+                                    >叮！交大专属壁纸</a></li>
+                        
+                        <li class="col-md-2 col-xs-3"><a href="/jtdx/index/imagesList" title="">更多>></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <!--瀑布流-->
+            <div class="dark-bg" style="">
+                <div class="waterfall-warp">
+                    <div id="waterfall" style="height:auto;">
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12792')"></i>
+                                            <p>22</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12792" onclick="likeImage(this,'12792')"></i>
+                                            <p>11</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12792')"></i>
+                                            <p>1</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12792/1_c22e6272-bf17-4d58-8424-937bd7d00f67.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12791')"></i>
+                                            <p>9</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12791" onclick="likeImage(this,'12791')"></i>
+                                            <p>14</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12791')"></i>
+                                            <p>1</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12791/1_854b9f5a-ef4b-4b25-887e-b690142777c0.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12789')"></i>
+                                            <p>5</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12789" onclick="likeImage(this,'12789')"></i>
+                                            <p>10</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12789')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12789/1_68da6a55-44c6-4915-a28d-8c7dc051fe33.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12776')"></i>
+                                            <p>41</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12776" onclick="likeImage(this,'12776')"></i>
+                                            <p>19</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12776')"></i>
+                                            <p>1</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12776/1_2b4bced1-3f73-4e2b-a55f-d3880176772b.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12771')"></i>
+                                            <p>6</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12771" onclick="likeImage(this,'12771')"></i>
+                                            <p>7</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12771')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12771/1_de656baf-22e8-41b7-90e9-2d6ea8e1374d.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12769')"></i>
+                                            <p>2</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12769" onclick="likeImage(this,'12769')"></i>
+                                            <p>2</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12769')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12769/1_0e7448a7-dcf6-4691-918f-0898efb5ace5.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12762')"></i>
+                                            <p>7</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12762" onclick="likeImage(this,'12762')"></i>
+                                            <p>5</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12762')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12762/1_567e3920-e64e-42b7-a75b-ff88d34970f0.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12750')"></i>
+                                            <p>2</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12750" onclick="likeImage(this,'12750')"></i>
+                                            <p>5</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12750')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12750/1_4a2b16cb-cffe-448c-a0e2-b4970a4b0053.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12752')"></i>
+                                            <p>37</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12752" onclick="likeImage(this,'12752')"></i>
+                                            <p>12</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12752')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12752/1_ee73947a-d979-4e34-ab3b-1ccb072bc70d.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12749')"></i>
+                                            <p>8</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12749" onclick="likeImage(this,'12749')"></i>
+                                            <p>2</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12749')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12749/1_6a5663c7-2d67-45d0-b5df-7ae98cb45321.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12745')"></i>
+                                            <p>13</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12745" onclick="likeImage(this,'12745')"></i>
+                                            <p>6</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12745')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12745/1_65751961-a9e5-4e8a-8ba5-38165a061de6.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+                            <div class="waterfall-item">
+                                <div class="hover-show-cont" >
+                                    <ul class="hover-show">
+                                        <li>
+                                            <i class="iconfont icon-Group-" onclick="showImageInfo('12742')"></i>
+                                            <p>3</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-zan" _zanid="12742" onclick="likeImage(this,'12742')"></i>
+                                            <p>3</p>
+                                        </li>
+                                        <li>
+                                            <i class="iconfont icon-heart " onclick="collectImage(this,'12742')"></i>
+                                            <p>0</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                    
+                                        <img src="/jtdx/resources/images\12742/1_a7579f1e-b311-4080-917c-62b92b1029af.jpg" alt="">
+                                    
+                                    
+                                
+                            </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer" style="margin-top: 0">
+                上海交通大学版权所有
+            </div>
+        </div>
+        <a href="#" class="top">
+            <i class="iconfont icon-huidaodingbu"></i>
+        </a>
+    </div>
+</div>
+<div class="modal  fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog login-pop-cont" style="margin-top: 15%;" role="document">
+        <div class="modal-content login-popup">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">用户登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" method="post" id="loginForm">
+                    <div class="form-group">
+                        <i class="iconfont icon-zhcc_yonghuming"></i>
+                        <input type="text" placeholder="请输入用户名" class="form-control" id="accountName" name="accountName">
+                    </div>
+
+                    <div class="form-group ">
+                        <i class="iconfont icon-mima"></i>
+                        <input type="password" class="form-control" name="password" id="password">
+                        <div class="tips">
+                            <i class="iconfont icon-tishi"></i> <span id="error_body"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" class="btn btn-danger btn-login" onclick="initBtn()">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 提示信息 -->
+<div class="modal fade" id="tishi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="margin-top: 20%;width:400px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    <i class="iconfont icon-tishi" style="color: #C8171E;font-size: 25px"></i>提示
+                </h4>
+            </div>
+            <div class="modal-body">
+                <span id="tishi_message"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    function outLogin (){
+        window.location.href = "/jtdx/user/outlogin";
+    }
+    function initBtn() {
+
+        $.ajax({
+            url : "/jtdx/user/logindo",
+            data : $("#loginForm").serialize(),
+            dataType : "json",
+            type : "post",
+            success : function(data) {
+                if (data.status == "1") {
+                    window.location.href = "/jtdx/index/#main-content";
+                } else {
+                    if (typeof data.info == "object") {
+                        $('#error_body').html(data.info[0].defaultMessage);
+                        $(".tips").show();
+                    } else {
+                        $('#error_body').html(data.info);
+                        $(".tips").show();
+                    }
+                }
+            },
+            error:function(){
+                $("#accountName").val("");
+                $("#password").val("");
+            }
+        });
+
+    }
+
+    $('.normal-slider').owlCarousel({
+        items: 1,
+        margin: 0,
+        stagePadding: 0,
+        smartSpeed: 1000,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true
+    });
+
+</script>
+<!-- 吴 新增 开始 -->
+<script type='text/javascript' src='/jtdx/resources/assets/js/master.min.js'></script>
+<script type='text/javascript' src='/jtdx/resources/assets/js/stickUp.min.js'></script><!-- 吴 新增 结束 -->
+<script src="/jtdx/resources/assets/plugin/waterfall/jquery.waterfall.js"></script>
+<script>
+    $(window).scroll(function(){
+        var top = $("#main").offset().top;
+        if(top - $(window).scrollTop() < 70) {
+            $('.header-index').addClass('header-index-bg')
+        } else {
+            $('.header-index').removeClass('header-index-bg')
+        }
+    })
+</script>
+<script>
+    var pageNo = 2;//当前页数
+    $(function () {
+        //isNewVisitor();
+
+        $(window).resize(function() {
+            fitImgs();
+        });
+
+        //初始化完成，加载部分数据
+        $("#waterfall").waterfall({
+            itemClass: ".waterfall-item",
+            minColCount: 0,
+            spacingHeight: 10,
+            resizeable: false,
+            ajaxCallback: function(success, end) {
+                success();
+                var page = pageNo +1;
+                $.ajax({
+                    url : "/jtdx/index/images?type=1&pageSize=6&pageNo="+page,
+                    dataType : "json",
+                    data: {themeId:"",tagId:"",searchContent:""},
+                    type : "post",
+                    success : function(data) {
+                        if(data.code != "0000"){
+                            if(data.code == "0001"){
+                                var srcDiv = '<div style="text-align: center;margin-top: 15px; color:#fff;">没有更多数据了</div>'
+                                $("#waterfall").after(srcDiv);
+                                return;
+                            }else {
+                                var srcDiv1 = '<div style="text-align: center;margin-top: 15px; color:#fff;">加载出错：'+data.message+'</div>';
+                                $("#waterfall").after(srcDiv1);
+                                success();
+                                end();
+                                return;
+                            }
+                        }
+                        pageNo = page;
+                        var str = "";
+                        var date = new Date();
+                        var dateString = date.getFullYear() +"";
+                        var month = date.getMonth()+1+"";
+                        if(month.length <= 1){
+                            month = "0"+month;
+                        }
+                        var day = date.getDate()+"";
+                        if(day.length <= 1){
+                            day = "0"+day;
+                        }
+                        dateString  = dateString + month + day;
+                        for(var i = 0; i < data.imageList.length; i++) {
+                            var templ = '<div class="waterfall-item" style="opacity:0;filter:alpha(opacity=0);">' +
+                                '<div class="hover-show-cont" ><ul class="hover-show">' +
+                                '<li><i class="iconfont icon-Group-" onclick="showImageInfo(\''+data.imageList[i].id+'\')"></i><p>'
+                                + data.imageList[i].downloadNum+'</p></li>' +
+                                '<li><i class="iconfont icon-zan';
+                            if(storage.getItem( data.imageList[i].id) >= dateString){
+                                templ += " icon-red";
+                            }
+                            templ +='" onclick="likeImage(this,\''+data.imageList[i].id+'\')"></i><p>'
+                                + data.imageList[i].goodNum+'</p></li>' +
+                                '<li><i class="iconfont icon-heart';
+                            if(data.imageList[i].collectFlag || data.imageList[i].collectFlag == "true"){
+                                templ += " icon-red";
+                            }
+                            templ += '" onclick="collectImage(this,\''+data.imageList[i].id+'\')""></i><p>'+ data.imageList[i].collectionNum+'</p></li></ul></div>'+
+                                '<div class="pic"><img src="{{src}}" /></div>' +
+                                '</div>';
+                            if( data.imageList[i].imageUrl.indexOf("/") === 0){
+                                str += templ.replace("{{src}}", "/jtdx"+ data.imageList[i].imageUrl);
+                            }else {
+                                str += templ.replace("{{src}}", "/jtdx/"+ data.imageList[i].imageUrl);
+                            }
+                        }
+                        $(str).appendTo($("#waterfall"));
+                        success();
+                        end();
+                    },
+                    error:function(e){
+                        console.log("加载出错",e);
+                    }
+                });
+            }
+        });
+    });
+    function fitImgs(){
+        //console.log('page fitImgs');
+        $('.hot-theme').each(function(index){
+            var hotImg0 = $(this).find('img');
+            hotImg0.width($(this).width());
+            hotImg0.height($(this).width()*33/(index==0?78:38));
+        });;
+        $('.item').each(function(){
+            var img = $(this).find('img');
+            img.height($(window).width()*53/192);
+        });
+    }
+
+    // 点击查询
+    function searchByContent(){
+        searchContent = $("#searchContent").val();
+        window.location.href = "/jtdx/index/imagesList?searchContent="+searchContent;
+    }
+
+    // 显示图片信息
+    function showImageInfo(imageId){
+        window.location.href='/jtdx/index/imageInfo?imageId='+imageId;
+    }
+
+    function gotoVideoList(){
+        //
+        
+        
+        $('#myModal').modal('show');
+        
+    }
+
+    // 收藏
+    function collectImage(obj,imageId){
+        var type = "collect";
+        if($(obj).hasClass("icon-red")){
+            type = "uncollect";
+        }
+        var e = arguments.callee.caller.arguments[0];
+
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: "/jtdx/index/collectImage?imageId="+imageId+"&type=" +type,//url
+            success: function (result) {
+                if("0000" == result.code){
+                    if(type == "collect"){
+                        $(obj).addClass("icon-red");
+                        var value = $(obj).next().text();
+                        if(!isNaN(value)){
+                            $(obj).next().text(parseInt(value)+1);;
+                        }
+                        createHeart(e, 'icon-heart');
+                        //alert("收藏成功");
+                    }else{
+                        $(obj).removeClass("icon-red");
+                        var value = $(obj).next().text();
+                        if(!isNaN(value) && parseInt(value) > 0){
+                            $(obj).next().text(parseInt(value)-1);;
+                        }
+                        //alert("取消收藏成功");
+                    }
+                }else {
+                    if('请先登录'==result.message){
+                        $('#myModal').modal('show');
+                    }else{
+                        $("#tishi_message").text(result.message);
+                        $('#tishi').modal('show')
+                    }
+                }
+            }
+        });
+    }
+
+    var storage = window.localStorage;
+    // 点赞
+    function likeImage(obj,imageId){
+        if($(obj).hasClass("icon-red")){
+            return;
+        }
+        var date = new Date();
+        var dateString = date.getFullYear() +"";
+        var month = date.getMonth()+1+"";
+        if(month.length <= 1){
+            month = "0"+month;
+        }
+        var day = date.getDate()+"";
+        if(day.length <= 1){
+            day = "0"+day;
+        }
+        dateString  = dateString + month + day;
+        //console.log(dateString);
+        if(storage.getItem(imageId) >= dateString){
+            return;
+        }
+
+        var e = arguments.callee.caller.arguments[0];
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: "/jtdx/index/likeImage?imageId="+imageId,//url
+            success: function (result) {
+                if("0000" == result.code){
+                    storage.setItem(imageId,dateString);
+                    $(obj).addClass("icon-red");
+                    var value = $(obj).next().text();
+                    if(!isNaN(value)){
+                        $(obj).next().text(parseInt(value)+1);;
+                    }
+                    createHeart(e, 'icon-zan');
+                    //alert("点赞成功");
+                }else {
+                    if('请先登录'==result.message){
+                        $('#myModal').modal('show');
+                    }else{
+                        $("#tishi_message").text(result.message);
+                        $('#tishi').modal('show')
+                    }
+                }
+            }
+        });
+    }
+
+    // 初始检查是否存在已经点赞的
+    function checkZan(){
+        var date = new Date();
+        var dateString = date.getFullYear() +"";
+        var month = date.getMonth()+1+"";
+        if(month.length <= 1){
+            month = "0"+month;
+        }
+        var day = date.getDate()+"";
+        if(day.length <= 1){
+            day = "0"+day;
+        }
+        dateString  = dateString + month + day;
+        $("i[_zanid]").each(function(){
+            //console.log($(this).attr("_zanid"));
+            if(storage.getItem($(this).attr("_zanid")) >= dateString){
+                $(this).addClass("icon-red");
+            }
+        });
+    }
+</script>
+<!-- 吴 新增 开始 -->
+<script type="text/javascript">
+    //initiating jQuery
+    jQuery(function($) {
+        $(document).ready( function() {
+            //enabling stickUp on the '.navbar-wrapper' class
+            $('.navbar-wrapper').stickUp();
+            fitImgs();
+            checkZan();
+        });
+    });
+
+</script><!-- 吴 新增 结束 -->
+</body>
+</html>

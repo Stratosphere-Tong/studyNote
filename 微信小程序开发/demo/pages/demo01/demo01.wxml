@@ -1,0 +1,9 @@
+<!--pages/demo01/demo01.wxml-->
+<!--
+  实现输入和输出的加减
+  注意函数中数字必须使用const
+-->
+<input type="text" bindinput="handleInput" />
+<button bindtap="handleTap" data-operation="{{1}}">+</button>
+<button bindtap="handleTap" data-operation="{{-1}}">-</button>
+<view>{{num}}</view>
